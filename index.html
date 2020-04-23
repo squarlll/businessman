@@ -11,7 +11,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/ion.rangeSlider.css">
 </head>
 <body>
 	<div class="body-social">
@@ -92,25 +91,22 @@
 	</header>
 	<div class="header__bottom">
 		<div class="container">
-			<div class="header__container_2">
-				<a href="tel:89000000000" class="header__tel_2">Телефон горячей линии</a>
-				<div class="header__social">
-					<a href="#.">
-						<img src="img/ico/header/header-vk.svg" alt="">
-					</a>
-					<a href="#.">
-						<img src="img/ico/header/header-youtube.svg" alt="">
-					</a>
-					<a href="#.">
-						<img src="img/ico/header/header-facebook.svg" alt="">
-					</a>
-					<a href="#.">
-						<img src="img/ico/header/header-twitter.svg" alt="">
-					</a>
-					<a href="#.">
-						<img src="img/ico/header/header-instagram.svg" alt="">
-					</a>
-				</div>
+			<div class="header__social">
+				<a href="#.">
+					<img src="img/ico/footer/vk.svg" alt="">
+				</a>
+				<a href="#.">
+					<img src="img/ico/footer/youtube.svg" alt="">
+				</a>
+				<a href="#.">
+					<img src="img/ico/footer/facebook.svg" alt="">
+				</a>
+				<a href="#.">
+					<img src="img/ico/footer/twitter.svg" alt="">
+				</a>
+				<a href="#.">
+					<img src="img/ico/footer/instagram.svg" alt="">
+				</a>
 			</div>
 		</div>
 	</div>
@@ -436,10 +432,9 @@
 						Сколько денег вы планируете потратить на решение этой задачи?
 					</div>
 					<form class="test__range-wrapper" action="#">
-						<input type="range" class="test__range" min="10000" max="10000000" name="my_range" value="500000">
+						<input type="range" class="test__range test__range_1" min="10000" max="10000000" name="my_range" value="500000">
 						<div class="range__row">
-							<div class="range__min">10 000 ₽</div>
-							<div class="range__max">10 000 000 ₽</div>
+							<div class="range_1__result"></div>
 						</div>
 					</form>
 					<div class="test__navigation-wrapper">
@@ -459,10 +454,9 @@
 						Сколько денег тратите на привлечение клиентов в месяц?
 					</div>
 					<form class="test__range-wrapper" action="#">
-						<input type="range" class="test__range" min="10000" max="10000000" name="my_range" value="500000">
+						<input type="range" class="test__range test__range_2" min="10000" max="10000000" name="my_range" value="500000">
 						<div class="range__row">
-							<div class="range__min">10 000 ₽</div>
-							<div class="range__max">10 000 000 ₽</div>
+							<div class="range_2__result"></div>
 						</div>
 					</form>
 					<div class="test__navigation-wrapper">
@@ -497,24 +491,109 @@
 		</div>
 	</div>
 	<!-- / test -->
+	<!-- questions -->
+	<div class="questions container">
+		<div class="questions__wrapper">
+			<div class="questions__title">Частые вопросы</div>
+			<div class="question__wrapper">
+				<div class="question question_1">
+					<div>А почему именно нужно выбрать вас?</div>
+					<div class="question__button question__button_1">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div class="answer answer_1">
+					Потому что мы проконсультировали уже более 5000 предпринимателей и есть готовые решения по привлечению клиентов и продажам.
+				</div>
+			</div>
+			<div class="question__wrapper">
+				<div class="question question_2">
+					<div>Зачем это мне, предпринимателю?</div>
+					<div class="question__button question__button_2">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div class="answer answer_2">
+					Для того, чтобы получить бесплатную консультацию по самой главной задаче бизнеса. Это маркетинг и продажи. Это вас ни к чему не обязывает, но тем ни менее вы можете получить решения по самым сложным задачам.
+				</div>
+			</div>
+			<div class="question__wrapper">
+				<div class="question question_3">
+					<div>Какие проблемы вы решаете?</div>
+					<div class="question__button question__button_3">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div class="answer answer_3">
+					Бесплатный подбор персонала или специалистов. Выявление узких мест или проблемных точек в бизнесе. Контроль за исполнением обязательств подрядчиков, это дает вам гарантии на положительный результат.
+				</div>
+			</div>
+			<div class="question__wrapper">
+				<div class="question question_4">
+					<div>Почему выгодно обратиться за консультацией в яБизнесмен.рф?</div>
+					<div class="question__button question__button_4">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div class="answer answer_4">
+					1. Получаете готовое решение по развитию<br>
+					2. Экономите деньги на реализации
+				</div>
+			</div>
+		</div>
+		<div class="questions__boxes">
+			<div class="questions__box"></div>
+			<div class="questions__box"></div>
+			<div class="questions__box"></div>
+			<div class="questions__box"></div>
+			<div class="questions__box"></div>
+		</div>
+	</div>
+	<!-- / questions -->
 	<!-- footer -->
 	<footer class="footer">
 		<div class="footer__container">
 			<div class="footer__row">
-				<a href="#" class="footer__logo">
-					<img src="img/logo-2.png" alt="footer-logo">
-				</a>
-				<ul class="footer__menu">
-					<li class="footer__item">
-						<a href="#" class="footer__link">О Нас</a>
-					</li>
-					<li class="footer__item">
-						<a href="#" class="footer__link">Услуги</a>
-					</li>
-					<li class="footer__item">
-						<a href="#" class="footer__link">Контакты</a>
-					</li>
-				</ul>
+				<div class="footer__navigation">
+					<a href="#" class="footer__logo">
+						<img src="img/logo-2.png" alt="footer-logo">
+					</a>
+					<ul class="footer__menu">
+						<li class="footer__item">
+							<a href="#" class="footer__link">О Нас</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Услуги</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__social">
+					<a href="#.">
+						<img src="img/ico/footer/vk.svg" alt="">
+					</a>
+					<a href="#.">
+						<img src="img/ico/footer/youtube.svg" alt="">
+					</a>
+					<a href="#.">
+						<img src="img/ico/footer/facebook.svg" alt="">
+					</a>
+					<a href="#.">
+						<img src="img/ico/footer/twitter.svg" alt="">
+					</a>
+					<a href="#.">
+						<img src="img/ico/footer/instagram.svg" alt="">
+					</a>
+					<a href="#.">
+						<img src="img/ico/footer/telegram.svg" alt="">
+					</a>
+				</div>
 				<div class="footer__tel">
 					<a href="tel:88000000000" class="footer__tel-button">
 						Позвонить
@@ -531,6 +610,5 @@
     <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
     <script src="js/slick.min.js" type="text/javascript"></script>
     <script src="js/businessman.js" type="text/javascript"></script>
-    <script src="js/ion.rangeSlider.min.js" type="text/javascript"></script>
 </body>
 </html>

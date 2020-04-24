@@ -24,34 +24,6 @@ $main-color: #F16147;
 	width: calc(100% - 20px);
 	margin: auto;
 }
-.body-social{
-	z-index: 2;
-	position: fixed;
-	right: 0;
-	top: calc(50vh - 86.5px);
-	padding: 8.5px 9px;
-	background: #FFFFFF;
-	box-shadow: 0px 4px 15px rgba(171, 205, 214, 0.5);
-	border-radius: 6px 0px 0px 6px;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-direction: column;
-	& a{
-		margin: 7.5px 0;
-	}
-	& img{
-		width: 37px;
-	}
-	@media screen and (max-width: 640px){
-		padding: 2.5px 6px;
-		& img{
-			width: 25px;
-		}
-	}
-}
 /* pop-ups */
 .popup{
 	max-width: 815px;
@@ -139,7 +111,7 @@ $main-color: #F16147;
 		border-radius: 4px;
 	}
 	@media screen and (max-width: 1100px) {
-		padding: 112px 50px 20px 50px;
+		padding: 112px 50px 20px;
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -166,6 +138,12 @@ $main-color: #F16147;
 		&__title{
 			font-size: 22px;
 		}
+	}
+	@media screen and (max-width: 500px) {
+		width: calc(100vw - 20px);
+		margin: auto;
+		padding: 112px 20px 20px;
+		min-height: 570px;
 	}
 	@media screen and (max-width: 400px) {
 		&__title{
@@ -359,14 +337,12 @@ $main-color: #F16147;
 		padding: 15px 26px 16px;
 		font-size: 16px;
 		line-height: 140%;
-		color: #000;
-		border: 1px solid #F68446;
-		box-sizing: border-box;
+		color: #fff;
+		background: #F68446;
 		border-radius: 6px;
 		transition: .2s;
 		&:hover{
 			background: #F16147;
-			color: #fff;
 		}
 	}
 	@media screen and (max-width: 768px){
@@ -439,9 +415,6 @@ $main-color: #F16147;
 		.header__tel-button{
 			font-size: 13px;
 			padding: 18px 10px 17px;
-		}
-		&__tel-button{
-			color: #F68446;
 		}
 		&__social{
 			display: -webkit-flex;
@@ -664,14 +637,15 @@ $main-color: #F16147;
 	&_3{
 		background:url('../img/main-bg_3.jpg') no-repeat right / cover;
 		min-height: 504px;
+		& .main__subtitle{
+			max-width: 482px;
+		}
 	}
 	&__title, &__title_2{
-		font-size: 38px;
+		font-size: 48px;
 		line-height: 120%;
 		color: #000;
-		& span{
-			font-weight: 700;
-		}
+		font-weight: 600;
 	}
 	&__title{
 		max-width: 781px;
@@ -680,12 +654,12 @@ $main-color: #F16147;
 		max-width: 730px;
 	}
 	&__subtitle{
-		font-size: 18px;
+		font-weight: 300;
+		font-size: 20px;
 		line-height: 160%;
-		color: #000;
-		margin-top: 23px;
+		margin-top: 22px;
 		& span{
-			font-weight: 700;
+			color: #F68446;
 		}
 	}
 	&__button, &__button_2{
@@ -803,11 +777,6 @@ $main-color: #F16147;
 			max-width: 300px;
 			margin: 15px auto 0;
 		}
-		&__subtitle{
-			font-size: 13px;
-			max-width: 270px;
-			margin: 16px auto 0;
-		}
 	}
 	@media screen and (max-width: 500px) {
 		padding: 83px 0 0;
@@ -822,9 +791,8 @@ $main-color: #F16147;
 			line-height: 120%;
 		}
 		&__subtitle{
-			font-size: 13px;
-			line-height: 160%;
-			max-width: 100%;
+			max-width: 270px;
+			margin: 13px auto 0;
 		}
 		&__button{
 			margin-top: 40px;
@@ -1182,7 +1150,8 @@ $main-color: #F16147;
 		font-size: 72px;
 		line-height: 150%;
 		letter-spacing: 0.1em;
-		color: #070715;
+		color: transparent;
+		-webkit-text-stroke: 2px #F68446;
 	}
 	&__text{
 		font-size: 18px;
@@ -1214,17 +1183,36 @@ $main-color: #F16147;
 		}
 	}
 	@media screen and (max-width: 639px) {
+		&__title{
+			text-align: left;
+		}
 		&__step{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			align-items: center;
 			flex: 1 0 100%;
+			margin-top: 0;
+			margin-bottom: -14px;
+		}
+		&__number{
+			-webkit-text-stroke: 1px #F68446;
+			font-size: 55px;
+		}
+		&__text{
+			margin: 0 0 0 8px;
+			max-width: 100%;
+			text-align: left;
+			font-size: 13px;
+			line-height: 170%;
 		}
 	}
 	@media screen and (max-width: 500px) {
 		margin-top: 49px;
 		&__row{
 			margin-top: -1px;
-		}
-		&__step{
-			margin-top: 25px;
 		}
 	}
 }
@@ -1239,6 +1227,13 @@ $main-color: #F16147;
 		display: -o-flex;
 		display: flex;
 		align-items: center;
+	}
+	&__title{
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 150%;
+		color: #070715;
+		text-align: center;
 	}
 	&__img{
 		flex: 1 0 55.66%;
@@ -1316,6 +1311,10 @@ $main-color: #F16147;
 	}
 	@media screen and (max-width: 500px) {
 		margin-top: 30px;
+		&__title{
+			font-size: 24px;
+			line-height: 150%;
+		}
 		&__img{
 			align-items: center;
 			& img{
@@ -1335,7 +1334,7 @@ $main-color: #F16147;
 	background: url('../img/test-img.jpg') no-repeat center / cover;
 	overflow-x: hidden;
 	&.active{
-		background: #191919;
+		background: #fff;
 	}
 	&__container{
 		max-width: 600px;
@@ -1365,7 +1364,7 @@ $main-color: #F16147;
 		}
 	}
 	&_1{
-		padding-top: 174px;
+		justify-content: center;
 	}
 	&_6{
 		align-items: center;
@@ -1385,7 +1384,7 @@ $main-color: #F16147;
 			position: absolute;
 			left: 0;
 			top: 0;
-			background: #EF4043;
+			background: #F68446;
 			border-radius: 8px;
 			height: 100%;
 		}
@@ -1405,7 +1404,7 @@ $main-color: #F16147;
 	&__progress-text{
 		font-size: 14px;
 		line-height: 170%;
-		color: #fff;
+		color: #070715;
 		margin-top: 17px;
 		display: block;
 	}
@@ -1413,18 +1412,18 @@ $main-color: #F16147;
 		font-weight: 600;
 		font-size: 28px;
 		line-height: 170%;
-		color: #FFFFFF;
+		color: #070715;
 		margin-top: 47px;
 	}
 	&__subtitle{
 		font-size: 16px;
 		line-height: 170%;
-		color: #FFFFFF;
+		color: #070715;
 	}
 	&__button{
 		margin-top: 55px;
 		padding: 14px 0 15px;
-		background: #F16147;
+		background: #F68446;
 		font-size: 18px;
 		line-height: 170%;
 		color: #fff;
@@ -1437,7 +1436,7 @@ $main-color: #F16147;
 		font-weight: bold;
 		font-size: 20px;
 		line-height: 170%;
-		color: #fff;
+		color: #070715;
 		margin-top: 58px;
 	}
 	.stage{
@@ -1476,7 +1475,7 @@ $main-color: #F16147;
 		margin-left: 10px;
 		font-size: 18px;
 		line-height: 170%;
-		color: #fff;
+		color: #070715;
 		margin-top: -10px;
 	}
 	.stage__column, .tasks__column{
@@ -1486,7 +1485,7 @@ $main-color: #F16147;
 		display: block;
 		min-width: 12px;
 		height: 12px;
-		border: 1px solid #fff;
+		border: 1px solid #070715;
 		border-radius: 50%;
 		position: relative;
 		&::before{
@@ -1498,7 +1497,7 @@ $main-color: #F16147;
 			transform: translate(-50%, -50%);
 			width: 6px;
 			height: 6px;
-			background:#fff;
+			background: #070715;
 			border-radius: 50%;
 			transition: .15s;
 			opacity: 0;
@@ -1508,7 +1507,7 @@ $main-color: #F16147;
 		display: block;
 		min-width: 10px;
 		height: 10px;
-		border: 1px solid #fff;
+		border: 1px solid #070715;
 		position: relative;
 		&::before{
 			content: "";
@@ -1519,7 +1518,7 @@ $main-color: #F16147;
 			transform: translate(-50%, -50%);
 			width: 6px;
 			height: 6px;
-			background:#fff;
+			background:#070715;
 			transition: .15s;
 			opacity: 0;
 		}
@@ -1553,7 +1552,7 @@ $main-color: #F16147;
 	&__back-button{
 		font-size: 18px;
 		line-height: 170%;
-		color: #fff;
+		color: #070715;
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -1566,7 +1565,6 @@ $main-color: #F16147;
 	}
 	&__next-button{
 		margin: 0 0 0 20px;
-		background: #EF4043;
 	}
 	&__range{
 		width: 100%;
@@ -1648,14 +1646,14 @@ $main-color: #F16147;
 		font-size: 18px;
 		line-height: 170%;
 		text-align: center;
-		color: #FFFFFF;
+		color: #070715;
 	}
 	&_6__data{
 		font-weight: bold;
 		font-size: 20px;
 		line-height: 170%;
 		text-align: center;
-		color: #FFFFFF;
+		color: #070715;
 		max-width: 367px;
 		margin: 54px 0 5px;
 	}
@@ -1670,8 +1668,9 @@ $main-color: #F16147;
 		max-width: 100%;
 	}
 	&__input{
-		padding: 12px 12px 12px 29px;
-		background: #FDFAFA;
+		padding: 21px 23px;
+		background: transparent;
+		border: 1px solid #CECECE;
 		border-radius: 4px;
 		font-size: 18px;
 		line-height: 170%;
@@ -1680,17 +1679,16 @@ $main-color: #F16147;
 		max-width: 100%;
 		width: 336px;
 		display: block;
+		max-width: 250px;
 		&::placeholder{
 			color: #B1B1B1;
 		}
 		&[type="submit"]{
-			padding: 12px 0;
-			background: #EF4043;
+			padding: 19px 0;
+		    background: #F68446;
 			text-align: center;
 			color: #FFF8F8;
-		}
-		&[type="checkbox"]{
-			
+			border: none;
 		}
 	}
 	&_6__checkbox{
@@ -1707,6 +1705,9 @@ $main-color: #F16147;
 			}
 		}
 	}
+	@media screen and (max-width: 1000px) {
+		background-position: right;
+	}
 	@media screen and (max-width: 768px) {
 		&__question{
 			font-size: 16px;
@@ -1717,7 +1718,7 @@ $main-color: #F16147;
 	}
 	@media screen and (max-width: 480px) {
 		&__thank{
-			font-size: 26px;
+			font-size: 10px;
 		}
 		.stage, .tasks{
 			flex-direction: column;
@@ -1729,22 +1730,21 @@ $main-color: #F16147;
 	}
 	@media screen and (max-width: 460px) {
 		overflow: hidden;
-		background-position: -783px;
 		&_1{
 			text-align: center;
 		}
 		& .container{
 			max-height: 627px;
+			height: 627px;
 		}
 		&__container{
 			width: 100%;
+			max-height: 100%;
+			min-height: 100%;
 		}
 		&__wrapper{
 			align-items: center;
 			padding-top: 31px;
-		}
-		&__button{
-			margin-top: 225px;
 		}
 		&__title{
 			font-size: 22px;
@@ -1763,6 +1763,7 @@ $main-color: #F16147;
 			line-height: 170%;
 			padding: 19px 0;
 			width: 270px;
+			margin-top: 36px;
 		}
 		&__next-button{
 			margin: 31px auto 0;
@@ -1816,11 +1817,6 @@ $main-color: #F16147;
 		}
 		& .stage{
 			margin-left: 19px;
-		}
-	}
-	@media screen and (max-width: 350px) {
-		&__thank{
-			font-size: 22px;
 		}
 	}
 }
@@ -2112,7 +2108,7 @@ $main-color: #F16147;
 }
 /* Footer */
 .footer{
-	background:#000;
+	background:#333;
 	padding: 78px 0;
 	&__container{
 		max-width: 1200px;

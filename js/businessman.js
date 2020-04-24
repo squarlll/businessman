@@ -21,18 +21,22 @@ $(document).ready(function(){
 	$('.test__start-button').on('click', function(){
 		$('.test_2').addClass('active');
 		$('.test_2').siblings().removeClass('active');
+		$('.test').addClass('active');
 	});
 	$('.test__next-button.test_2__button').on('click', function(){
 		$('.test_3').addClass('active');
 		$('.test_3').siblings().removeClass('active');
+		$('.test').addClass('active');
 	});
 	$('.test__next-button.test_3__button').on('click', function(){
 		$('.test_4').addClass('active');
 		$('.test_4').siblings().removeClass('active');
+		$('.test').addClass('active');
 	});
 	$('.test__next-button.test_4__button').on('click', function(){
 		$('.test_5').addClass('active');
 		$('.test_5').siblings().removeClass('active');
+		$('.test').addClass('active');
 	});
 	$('.test__next-button.test_5__button').on('click', function(){
 		$('.test_6').addClass('active');
@@ -44,6 +48,7 @@ $(document).ready(function(){
 	$('.test__back-button.test_2__button').on('click', function(){
 		$('.test_1').addClass('active');
 		$('.test_1').siblings().removeClass('active');
+		$('.test').removeClass('active');
 	});
 	$('.test__back-button.test_3__button').on('click', function(){
 		$('.test_2').addClass('active');
@@ -57,7 +62,6 @@ $(document).ready(function(){
 		$('.test_4').addClass('active');
 		$('.test_4').siblings().removeClass('active');
 		$('.test__container').removeClass('active');
-		$('.test').removeClass('active');
 	});
 
 	$('.answer_1, .answer_2, .answer_3, .answer_4').slideUp(0);
@@ -87,7 +91,8 @@ $(document).ready(function(){
 	// pop-up
 	$('.call-order-btn').on('click', function(){
 		$('.popup-background, .call-order-wrapper').addClass('active');
-		$('.nav').removeClass('menu-active')
+		$('.nav').removeClass('menu-active');
+		$('.header__menu-btn').toggleClass('hamburger-active');
 		$('html').addClass('lock');
 	});
 	$('.call-order__button').on('click', function(){

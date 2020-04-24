@@ -17,30 +17,6 @@ body {
   margin: auto;
 }
 
-.body-social {
-  z-index: 2;
-  position: fixed;
-  right: 0;
-  top: calc(50vh - 86.5px);
-  padding: 8.5px 9px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 15px rgba(171, 205, 214, 0.5);
-  border-radius: 6px 0px 0px 6px;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-direction: column;
-}
-
-.body-social a {
-  margin: 7.5px 0;
-}
-
-.body-social img {
-  width: 37px;
-}
-
 /* pop-ups */
 
 .popup {
@@ -341,16 +317,14 @@ body {
   padding: 15px 26px 16px;
   font-size: 16px;
   line-height: 140%;
-  color: #000;
-  border: 1px solid #F68446;
-  box-sizing: border-box;
+  color: #fff;
+  background: #F68446;
   border-radius: 6px;
   transition: 0.2s;
 }
 
 .header__tel-button:hover {
   background: #F16147;
-  color: #fff;
 }
 
 .logo {
@@ -510,16 +484,16 @@ body {
   min-height: 504px;
 }
 
-.main__title,
-.main__title_2 {
-  font-size: 38px;
-  line-height: 120%;
-  color: #000;
+.main_3 .main__subtitle {
+  max-width: 482px;
 }
 
-.main__title span,
-.main__title_2 span {
-  font-weight: 700;
+.main__title,
+.main__title_2 {
+  font-size: 48px;
+  line-height: 120%;
+  color: #000;
+  font-weight: 600;
 }
 
 .main__title {
@@ -531,14 +505,14 @@ body {
 }
 
 .main__subtitle {
-  font-size: 18px;
+  font-weight: 300;
+  font-size: 20px;
   line-height: 160%;
-  color: #000;
-  margin-top: 23px;
+  margin-top: 22px;
 }
 
 .main__subtitle span {
-  font-weight: 700;
+  color: #F68446;
 }
 
 .main__button,
@@ -801,7 +775,8 @@ body {
   font-size: 72px;
   line-height: 150%;
   letter-spacing: 0.1em;
-  color: #070715;
+  color: transparent;
+  -webkit-text-stroke: 2px #F68446;
 }
 
 .work__text {
@@ -826,6 +801,14 @@ body {
   display: -o-flex;
   display: flex;
   align-items: center;
+}
+
+.file__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: #070715;
+  text-align: center;
 }
 
 .file__img {
@@ -875,7 +858,7 @@ body {
 }
 
 .test.active {
-  background: #191919;
+  background: #fff;
 }
 
 .test__container {
@@ -908,7 +891,7 @@ body {
 }
 
 .test_1 {
-  padding-top: 174px;
+  justify-content: center;
 }
 
 .test_6 {
@@ -936,7 +919,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background: #EF4043;
+  background: #F68446;
   border-radius: 8px;
   height: 100%;
 }
@@ -960,7 +943,7 @@ body {
 .test__progress-text {
   font-size: 14px;
   line-height: 170%;
-  color: #fff;
+  color: #070715;
   margin-top: 17px;
   display: block;
 }
@@ -969,20 +952,20 @@ body {
   font-weight: 600;
   font-size: 28px;
   line-height: 170%;
-  color: #FFFFFF;
+  color: #070715;
   margin-top: 47px;
 }
 
 .test__subtitle {
   font-size: 16px;
   line-height: 170%;
-  color: #FFFFFF;
+  color: #070715;
 }
 
 .test__button {
   margin-top: 55px;
   padding: 14px 0 15px;
-  background: #F16147;
+  background: #F68446;
   font-size: 18px;
   line-height: 170%;
   color: #fff;
@@ -996,7 +979,7 @@ body {
   font-weight: bold;
   font-size: 20px;
   line-height: 170%;
-  color: #fff;
+  color: #070715;
   margin-top: 58px;
 }
 
@@ -1040,7 +1023,7 @@ body {
   margin-left: 10px;
   font-size: 18px;
   line-height: 170%;
-  color: #fff;
+  color: #070715;
   margin-top: -10px;
 }
 
@@ -1053,7 +1036,7 @@ body {
   display: block;
   min-width: 12px;
   height: 12px;
-  border: 1px solid #fff;
+  border: 1px solid #070715;
   border-radius: 50%;
   position: relative;
 }
@@ -1067,7 +1050,7 @@ body {
   transform: translate(-50%, -50%);
   width: 6px;
   height: 6px;
-  background: #fff;
+  background: #070715;
   border-radius: 50%;
   transition: 0.15s;
   opacity: 0;
@@ -1077,7 +1060,7 @@ body {
   display: block;
   min-width: 10px;
   height: 10px;
-  border: 1px solid #fff;
+  border: 1px solid #070715;
   position: relative;
 }
 
@@ -1090,7 +1073,7 @@ body {
   transform: translate(-50%, -50%);
   width: 6px;
   height: 6px;
-  background: #fff;
+  background: #070715;
   transition: 0.15s;
   opacity: 0;
 }
@@ -1128,7 +1111,7 @@ body {
 .test__back-button {
   font-size: 18px;
   line-height: 170%;
-  color: #fff;
+  color: #070715;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -1142,7 +1125,6 @@ body {
 
 .test__next-button {
   margin: 0 0 0 20px;
-  background: #EF4043;
 }
 
 .test__range {
@@ -1235,7 +1217,7 @@ body {
   font-size: 18px;
   line-height: 170%;
   text-align: center;
-  color: #FFFFFF;
+  color: #070715;
 }
 
 .test_6__data {
@@ -1243,7 +1225,7 @@ body {
   font-size: 20px;
   line-height: 170%;
   text-align: center;
-  color: #FFFFFF;
+  color: #070715;
   max-width: 367px;
   margin: 54px 0 5px;
 }
@@ -1259,8 +1241,9 @@ body {
 }
 
 .test__input {
-  padding: 12px 12px 12px 29px;
-  background: #FDFAFA;
+  padding: 21px 23px;
+  background: transparent;
+  border: 1px solid #CECECE;
   border-radius: 4px;
   font-size: 18px;
   line-height: 170%;
@@ -1269,6 +1252,7 @@ body {
   max-width: 100%;
   width: 336px;
   display: block;
+  max-width: 250px;
 }
 
 .test__input::placeholder {
@@ -1276,10 +1260,11 @@ body {
 }
 
 .test__input[type=submit] {
-  padding: 12px 0;
-  background: #EF4043;
+  padding: 19px 0;
+  background: #F68446;
   text-align: center;
   color: #FFF8F8;
+  border: none;
 }
 
 .test_6__checkbox {
@@ -1508,7 +1493,7 @@ body {
 /* Footer */
 
 .footer {
-  background: #000;
+  background: #333;
   padding: 78px 0;
 }
 
@@ -1751,7 +1736,7 @@ body {
 
 @media screen and (max-width: 1100px) {
   .popup {
-    padding: 112px 50px 20px 50px;
+    padding: 112px 50px 20px;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -1827,6 +1812,10 @@ body {
 @media screen and (max-width: 1000px) {
   .header .logo {
     margin-right: 30px;
+  }
+
+  .test {
+    background-position: right;
   }
 }
 
@@ -1977,10 +1966,6 @@ body {
   .header .header__tel-button {
     font-size: 13px;
     padding: 18px 10px 17px;
-  }
-
-  .header__tel-button {
-    color: #F68446;
   }
 
   .header__social {
@@ -2287,16 +2272,6 @@ body {
   }
 }
 
-@media screen and (max-width: 640px) {
-  .body-social {
-    padding: 2.5px 6px;
-  }
-
-  .body-social img {
-    width: 25px;
-  }
-}
-
 @media screen and (max-width: 639px) {
   .direction .statistics__item {
     flex: 0 1 100%;
@@ -2313,8 +2288,32 @@ body {
     margin-bottom: 0;
   }
 
+  .work__title {
+    text-align: left;
+  }
+
   .work__step {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
     flex: 1 0 100%;
+    margin-top: 0;
+    margin-bottom: -14px;
+  }
+
+  .work__number {
+    -webkit-text-stroke: 1px #F68446;
+    font-size: 55px;
+  }
+
+  .work__text {
+    margin: 0 0 0 8px;
+    max-width: 100%;
+    text-align: left;
+    font-size: 13px;
+    line-height: 170%;
   }
 }
 
@@ -2342,12 +2341,6 @@ body {
     max-width: 300px;
     margin: 15px auto 0;
   }
-
-  .main__subtitle {
-    font-size: 13px;
-    max-width: 270px;
-    margin: 16px auto 0;
-  }
 }
 
 @media screen and (max-width: 520px) {
@@ -2367,6 +2360,13 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  .popup {
+    width: calc(100vw - 20px);
+    margin: auto;
+    padding: 112px 20px 20px;
+    min-height: 570px;
+  }
+
   .main {
     padding: 83px 0 0;
     margin-bottom: 0;
@@ -2384,9 +2384,8 @@ body {
   }
 
   .main__subtitle {
-    font-size: 13px;
-    line-height: 160%;
-    max-width: 100%;
+    max-width: 270px;
+    margin: 13px auto 0;
   }
 
   .main__button {
@@ -2427,12 +2426,13 @@ body {
     margin-top: -1px;
   }
 
-  .work__step {
-    margin-top: 25px;
-  }
-
   .file {
     margin-top: 30px;
+  }
+
+  .file__title {
+    font-size: 24px;
+    line-height: 150%;
   }
 
   .file__img {
@@ -2476,7 +2476,7 @@ body {
   }
 
   .test__thank {
-    font-size: 26px;
+    font-size: 10px;
   }
 
   .test .stage,
@@ -2504,7 +2504,6 @@ body {
 @media screen and (max-width: 460px) {
   .test {
     overflow: hidden;
-    background-position: -783px;
   }
 
   .test_1 {
@@ -2513,19 +2512,18 @@ body {
 
   .test .container {
     max-height: 627px;
+    height: 627px;
   }
 
   .test__container {
     width: 100%;
+    max-height: 100%;
+    min-height: 100%;
   }
 
   .test__wrapper {
     align-items: center;
     padding-top: 31px;
-  }
-
-  .test__button {
-    margin-top: 225px;
   }
 
   .test__title {
@@ -2547,6 +2545,7 @@ body {
     line-height: 170%;
     padding: 19px 0;
     width: 270px;
+    margin-top: 36px;
   }
 
   .test__next-button {
@@ -2672,10 +2671,6 @@ body {
     width: 100%;
     padding: 25px 0;
     text-align: center;
-  }
-
-  .test__thank {
-    font-size: 22px;
   }
 }
 

@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	// lazy loading
+
 	// menu
 	$('.header__menu-btn').on('click', function(){
 		$('.header__menu ul').toggleClass('menu-active');
@@ -120,6 +122,7 @@ $(document).ready(function(){
 			$('.popup-thank').addClass('active');
 			$('.popup').addClass('active');
 			var yourName = $('.popup__name').val();
+			$('.popup-thank__image img').addClass('img_visible')
 			$('.popup-thank__title .popup-thank__your-name').html(yourName)
 		}
 	});

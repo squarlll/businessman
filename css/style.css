@@ -1,3 +1,97 @@
+/* Reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+*:focus,
+*:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: #000;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  pointer-events: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -71,6 +165,11 @@ body {
 
 .popup-thank__image img {
   max-width: 100%;
+  display: none;
+}
+
+.popup-thank__image img.img_visible {
+  display: block;
 }
 
 .popup-thank__title {
@@ -562,7 +661,6 @@ body {
 
 .main__button,
 .main__button_2 {
-  font-family: "Montserrat", sans-serif;
   display: inline-block;
   font-size: 16px;
   line-height: 112.84%;
@@ -1696,7 +1794,6 @@ body {
 }
 
 .page--warning__button a {
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   background: #F68446;
   border-radius: 6px;
@@ -1705,6 +1802,10 @@ body {
   color: #fff;
   padding: 22px 40px;
   display: inline-block;
+}
+
+.img_visible {
+  display: block;
 }
 
 @media screen and (max-width: 1320px) {
@@ -2046,6 +2147,7 @@ body {
 
   .header .logo img {
     width: 120px;
+    height: 19.28px;
   }
 
   .header .header__tel-button {

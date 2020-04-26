@@ -109,7 +109,7 @@ $(document).ready(function(){
 		$('.question__button_4').toggleClass('active');
 	});
 	// pop-up
-	$('.call-order-btn').on('click', function(){
+	$('.call-order-btn, .main__button_2, .main__button, .statistics__button button').on('click', function(){
 		$('.popup-background, .call-order-wrapper').addClass('active');
 		$('.nav').removeClass('menu-active');
 		$('.header__menu-btn').toggleClass('hamburger-active');

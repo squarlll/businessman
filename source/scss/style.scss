@@ -50,6 +50,12 @@ $main-color: #F16147;
 			transition: opacity .15s .1s, z-index 0s 0s;
 		}
 	}
+	&__social{
+		margin-top: 50px;
+		& a{
+			margin: 0 9px;
+		}
+	}
 	&-thank{
 		text-align: center;
 		display: none;
@@ -66,7 +72,7 @@ $main-color: #F16147;
 			font-weight: 600;
 			font-size: 15px;
 			line-height: 140%;
-			padding: 0 15px;
+			padding: 0 25px;
 		}
 		&__subtitle{
 			font-size: 13px;
@@ -74,7 +80,7 @@ $main-color: #F16147;
 			color: #070715;
 			max-width: 596px;
 			margin: auto;
-			padding: 0 15px;
+			padding: 0 25px;
 			margin-top: 25px;
 		}
 	}

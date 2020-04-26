@@ -1205,9 +1205,18 @@ body {
   padding: 0 24px;
 }
 
-.test .range__min,
-.test .range__max {
-  color: #070715;
+.test .range_1__result,
+.test .range_2__result {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+}
+
+.test .range_1__result img,
+.test .range_2__result img {
+  height: 11px;
 }
 
 .test .test__range {

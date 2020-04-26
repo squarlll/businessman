@@ -26,16 +26,16 @@ $(document).ready(function(){
 	}
 	var str1 = $('.test__range_1').val();
 	var str2 = $('.test__range_2').val();
-	$('.range_1__result').html(str1.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ') + ' &#8381;');
+	$('.range_1__result').html(str1.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ') + ' <img src="img/ico/ruble.svg" alt="">');
 	$(document).on('input change', '.test__range_1', function() {
 		var str1 = $('.test__range_1').val();
-		$('.range_1__result').html(str1.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ') + ' &#8381;');
+		$('.range_1__result').html(str1.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ') + ' <img src="img/ico/ruble.svg" alt="">');
 	});
 
-	$('.range_2__result').html(str2.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ') + ' &#8381;');
+	$('.range_2__result').html(str2.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ') + ' <img src="img/ico/ruble.svg" alt="">');
 	$(document).on('input change', '.test__range_2', function() {
 		var str2 = $('.test__range_2').val();
-		$('.range_2__result').html(str2.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ') + ' &#8381;');
+		$('.range_2__result').html(str2.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ') + ' <img src="img/ico/ruble.svg" alt="">');
 	});
 	// test
 	$('.test__start-button').on('click', function(){

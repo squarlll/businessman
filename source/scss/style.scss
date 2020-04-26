@@ -1630,8 +1630,16 @@ $main-color: #F16147;
 		margin-top: 8px;
 		padding: 0 24px;
 	}
-	.range__min, .range__max{
-		color: #070715;
+	.range_1__result, .range_2__result{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+		& img{
+			height: 11px;
+		}
 	}
 	.test__range {
 		-webkit-appearance: none;

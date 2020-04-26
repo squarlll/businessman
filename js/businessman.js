@@ -15,6 +15,15 @@ $(document).ready(function(){
 		e.preventDefault();
 		return false;
 	});
+	if (window.matchMedia("(max-width: 768px)").matches) {
+		$('.link-1, .link-2, .link-3').on('click', function(){
+			$('.header__menu ul').removeClass('menu-active');
+			$('.header__menu-btn').removeClass('hamburger-active');
+			$('.header').removeClass('header-active');
+			$('.header__form input').removeClass('mobile-menu_active');
+			$('html').removeClass('lock');
+		});
+	}
 	var str1 = $('.test__range_1').val();
 	var str2 = $('.test__range_2').val();
 	$('.range_1__result').html(str1.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ') + ' &#8381;');

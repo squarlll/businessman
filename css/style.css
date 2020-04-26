@@ -458,7 +458,8 @@ body {
 
 .main_1,
 .main_2,
-.main_3 {
+.main_3,
+.main_4 {
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -467,6 +468,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding: 0 15px 0 94px;
+  width: 100%;
 }
 
 .main_1 {
@@ -476,7 +478,7 @@ body {
 
 .main_2 {
   background: url("../img/main-bg_2.jpg") no-repeat right/cover;
-  min-height: 477px;
+  min-height: 456px;
 }
 
 .main_3 {
@@ -486,6 +488,15 @@ body {
 
 .main_3 .main__subtitle {
   max-width: 482px;
+}
+
+.main_4 {
+  background: url("../img/main-bg_4.jpg") no-repeat right/cover;
+  min-height: 504px;
+}
+
+.main_4 .main__subtitle {
+  max-width: 578px;
 }
 
 .main__title,
@@ -1672,7 +1683,8 @@ body {
 @media screen and (max-width: 1200px) {
   .main_1,
   .main_2,
-  .main_3 {
+  .main_3,
+  .main_4 {
     background-position: center;
   }
 
@@ -1784,7 +1796,8 @@ body {
 
   .main_1,
   .main_2,
-  .main_3 {
+  .main_3,
+  .main_4 {
     padding: 0 10px;
   }
 
@@ -2058,7 +2071,8 @@ body {
 
   .main_1,
   .main_2,
-  .main_3 {
+  .main_3,
+  .main_4 {
     min-height: 400px;
   }
 
@@ -2201,7 +2215,7 @@ body {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    margin-top: 119px;
+    margin-top: 50px;
   }
 
   .footer_1__social {
@@ -2361,7 +2375,8 @@ body {
 
   .main_1,
   .main_2,
-  .main_3 {
+  .main_3,
+  .main_4 {
     min-height: 381px;
     padding-top: 65px;
     justify-content: flex-start;

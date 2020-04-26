@@ -615,7 +615,7 @@ $main-color: #F16147;
 	padding: 188px 0 0;
 	margin: 0 auto;
 	width: 100%;
-	&_1, &_2, &_3{
+	&_1, &_2, &_3, &_4{
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -625,6 +625,7 @@ $main-color: #F16147;
 		justify-content: center;
 		align-items: flex-start;
 		padding: 0 15px 0 94px;
+		width: 100%;
 	}
 	&_1{
 		background:url('../img/main-bg_1.jpg') no-repeat right / cover;
@@ -632,13 +633,20 @@ $main-color: #F16147;
 	}
 	&_2{
 		background:url('../img/main-bg_2.jpg') no-repeat right / cover;
-		min-height: 477px;
+		min-height: 456px;
 	}
 	&_3{
 		background:url('../img/main-bg_3.jpg') no-repeat right / cover;
 		min-height: 504px;
 		& .main__subtitle{
 			max-width: 482px;
+		}
+	}
+	&_4{
+		background:url('../img/main-bg_4.jpg') no-repeat right / cover;
+		min-height: 504px;
+		& .main__subtitle{
+			max-width: 578px;
 		}
 	}
 	&__title, &__title_2{
@@ -709,17 +717,17 @@ $main-color: #F16147;
 		margin: 0 5px;
 	}
 	@media screen and (max-width: 1200px) {
-		&_1, &_2, &_3{
+		&_1, &_2, &_3, &_4{
 			background-position: center;
 		}
 	}
 	@media screen and (max-width: 1100px) {
-		&_1, &_2, &_3{
+		&_1, &_2, &_3, &_4{
 			padding: 0 10px;
 		}
 	}
 	@media screen and (max-width: 768px) {
-		&_1, &_2, &_3{
+		&_1, &_2, &_3, &_4{
 			min-height: 400px;
 		}
 		&__title, &__title_2{
@@ -763,7 +771,7 @@ $main-color: #F16147;
 	}
 	@media screen and (max-width: 600px) {
 		padding-top: 69px;
-		&_1, &_2, &_3{
+		&_1, &_2, &_3, &_4{
 			min-height: 381px;
 			padding-top: 65px;
 			justify-content: flex-start;
@@ -2282,7 +2290,7 @@ $main-color: #F16147;
 			display: -ms-flex;
 			display: -o-flex;
 			display: flex;
-			margin-top: 119px;
+			margin-top: 50px;
 		}
 		&_1__social{
 			display: none;

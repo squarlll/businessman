@@ -839,7 +839,7 @@ $main-color: #F16147;
 }
 // direction
 .direction{
-	margin-top: 98px;
+	padding-top: 98px;
 	&__title{
 		font-weight: 600;
 		font-size: 28px;
@@ -1231,7 +1231,7 @@ $main-color: #F16147;
 /* File */
 .file{
 	overflow-x: hidden;
-	margin-top: 95px;
+	padding-top: 95px;
 	&__container{
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -1590,9 +1590,6 @@ $main-color: #F16147;
 			width: 100%;
 		}
 	}
-	.range_1__result{
-		display: none;
-	}
 	.range__row{
 		width: 100%;
 		display: -webkit-flex;
@@ -1600,7 +1597,7 @@ $main-color: #F16147;
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		font-size: 18px;
 		line-height: 170%;
 		color: #000;

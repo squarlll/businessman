@@ -7,16 +7,29 @@ $(document).ready(function(){
 	    $('.header__form input').toggleClass('mobile-menu_active');
 	    $('html').toggleClass('lock');
 	});
-
-	$('.range_1__result').html($('.test__range_1').val());
+	$('a[href^="#"]').bind("click", function(e){
+		var anchor = $(this);
+		$('html, body').stop().animate({
+		scrollTop: $(anchor.attr("href")).offset().top
+		}, 1000);
+		e.preventDefault();
+		return false;
+	});
+	var str1 = $('.test__range_1').val();
+	var str2 = $('.test__range_2').val();
+	$('.range_1__result').html(str1.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ') + ' &#8381;');
 	$(document).on('input change', '.test__range_1', function() {
-	  $('.range_1__result').html($(this).val() + ' &#8381;');
+		var str1 = $('.test__range_1').val();
+		$('.range_1__result').html(str1.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ') + ' &#8381;');
 	});
 
-	$('.range_2__result').html($('.test__range_2').val());
+	$('.range_2__result').html(str2.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ') + ' &#8381;');
 	$(document).on('input change', '.test__range_2', function() {
-	  $('.range_2__result').html($(this).val() + ' &#8381;');
+		var str2 = $('.test__range_2').val();
+		$('.range_2__result').html(str2.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ') + ' &#8381;');
 	});
+	var str = '10000000000';
+	alert(str.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 '));
 	// test
 	$('.test__start-button').on('click', function(){
 		$('.test_2').addClass('active');

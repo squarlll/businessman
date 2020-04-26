@@ -593,7 +593,7 @@ body {
 }
 
 .direction {
-  margin-top: 98px;
+  padding-top: 98px;
 }
 
 .direction__title {
@@ -808,7 +808,7 @@ body {
 
 .file {
   overflow-x: hidden;
-  margin-top: 95px;
+  padding-top: 95px;
 }
 
 .file__container {
@@ -1158,17 +1158,13 @@ body {
   width: 100%;
 }
 
-.test .range_1__result {
-  display: none;
-}
-
 .test .range__row {
   width: 100%;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 18px;
   line-height: 170%;
   color: #000;

@@ -116,21 +116,18 @@ $(document).ready(function(){
 		$('html').addClass('lock');
 	});
 	$('.call-order__button').on('click', function(){
-		$('.call-order').addClass('active');
-	})
+		if ($('.popup__tel').is(":not(:invalid)")) {
+			$('.popup-thank').addClass('active');
+			$('.popup').addClass('active');
+			var yourName = $('.popup__name').val();
+			$('.popup-thank__title .popup-thank__your-name').html(yourName)
+		}
+	});
 	$('.popup__close-button, .popup-background').on('click', function(){
 		$('.popup-background, .call-order-wrapper').removeClass('active');
 		$('html').removeClass('lock');
-		$('.call-order').removeClass('active');
-	});
-	// slider
-	$('.main').slick({
-		infinite: true,
-		arrows: false,
-		dots: true,
-		slidesToShow:1,
-		speed:350,
-		padding: 10
+		$('.popup-thank').removeClass('active');
+		$('.popup').removeClass('active');
 	});
 });
 $(document).on("scroll", function(){
@@ -140,4 +137,13 @@ $(document).on("scroll", function(){
     } else{
         $("header").removeClass("header_small").addClass("header_large");
     }
+});
+// slider
+$('.main').slick({
+	infinite: true,
+	arrows: false,
+	dots: true,
+	slidesToShow:1,
+	speed:350,
+	padding: 10
 });

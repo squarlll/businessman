@@ -29,6 +29,7 @@ body {
   padding: 112px 82.5px 20px 124px;
   position: relative;
   overflow: auto;
+  background: linear-gradient(174.76deg, #FAFCFB 12.91%, #F9FBFB 58.41%);
 }
 
 .popup-wrapper {
@@ -45,6 +46,40 @@ body {
   opacity: 1;
   z-index: 1111111;
   transition: opacity 0.15s 0.1s, z-index 0s 0s;
+}
+
+.popup-thank {
+  text-align: center;
+  display: none;
+}
+
+.popup-thank.active {
+  display: block;
+}
+
+.popup-thank__image {
+  margin-bottom: -61px;
+}
+
+.popup-thank__image img {
+  max-width: 100%;
+}
+
+.popup-thank__title {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 140%;
+  padding: 0 15px;
+}
+
+.popup-thank__subtitle {
+  font-size: 13px;
+  line-height: 170%;
+  color: #070715;
+  max-width: 596px;
+  margin: auto;
+  padding: 0 15px;
+  margin-top: 25px;
 }
 
 .popup__close-button {
@@ -138,16 +173,6 @@ body {
   transition: opacity 0.3s 0s, z-index 0s 0s;
 }
 
-.call-order__thank {
-  display: none;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 150%;
-  text-align: center;
-  color: #070715;
-  max-width: 400px;
-}
-
 .call-order.active {
   display: -moz-flex;
   display: -ms-flex;
@@ -155,7 +180,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 0;
 }
 
 .call-order.active .call-order__title,

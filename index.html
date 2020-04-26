@@ -20,11 +20,17 @@
 			<button class="popup__close-button">
 				<img src="img/ico/close-popup.svg" alt="">
 			</button>
-			<div class="call-order__thank">Спасибо! Мы свяжемся с вами в течении 15 минут</div>
+			<div class="popup-thank">
+				<div class="popup-thank__image">
+					<img src="img/benjamin-franklin.png" alt="">
+				</div>
+				<div class="popup-thank__title">Уважаемый <span class="popup-thank__your-name"></span>!<br>Спасибо за обращение.</div>
+				<div class="popup-thank__subtitle">Сейчас вы сделали 1 шаг навстречу к нам, завтра мы сделаем 1000 навстречу к нам.<br>А пока следите за нами в социальных сетях</div>
+			</div>
 			<div class="popup__title call-order__title">Заполните заявку и мы перезвоним вам!</div>
 			<form class="popup__form call-order__form" onsubmit="return false;">
 				<input class="popup__name" type="text" placeholder="Ваше имя" required>
-				<input class="popup__tel" type="text" placeholder="+ 7 921 131-00-00" required>
+				<input class="popup__tel" type="tel" placeholder="+ 7 921 131-00-00" required>
 				<input class="popup__button call-order__button" type="submit" value="Заказать звонок">
 			</form>
 		</div>

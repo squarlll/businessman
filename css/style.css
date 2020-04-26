@@ -1216,7 +1216,7 @@ body {
 
 .test .range_1__result img,
 .test .range_2__result img {
-  height: 11px;
+  height: 12.7px;
 }
 
 .test .test__range {
@@ -2592,6 +2592,11 @@ body {
 }
 
 @media screen and (max-width: 460px) {
+  .test .range_1__result img,
+  .test .range_2__result img {
+    height: 12px;
+  }
+
   .test {
     overflow: hidden;
   }

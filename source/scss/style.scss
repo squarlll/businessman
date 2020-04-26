@@ -1638,7 +1638,12 @@ $main-color: #F16147;
 		display: flex;
 		align-items: center;
 		& img{
-			height: 11px;
+			height: 12.7px;
+		}
+		@media screen and (max-width: 460px) {
+			& img{
+				height: 12px;
+			}
 		}
 	}
 	.test__range {

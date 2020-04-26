@@ -28,8 +28,6 @@ $(document).ready(function(){
 		var str2 = $('.test__range_2').val();
 		$('.range_2__result').html(str2.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ') + ' &#8381;');
 	});
-	var str = '10000000000';
-	alert(str.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 '));
 	// test
 	$('.test__start-button').on('click', function(){
 		$('.test_2').addClass('active');

@@ -108,11 +108,12 @@ body {
   max-width: 100%;
 }
 
-.popup__form input {
+.popup__form input[type=text],
+.popup__form input[type=submit] {
   display: block;
 }
 
-.popup__name {
+.popup input[type=text].popup__name {
   font-size: 16px;
   line-height: 160%;
   padding: 20px 0 20px 25px;
@@ -124,11 +125,11 @@ body {
   margin-top: 33px;
 }
 
-.popup__name::placeholder {
+.popup input[type=text].popup__name::placeholder {
   color: #B2B2B2;
 }
 
-.popup__tel {
+.popup input[type=tel].popup__tel {
   font-size: 16px;
   line-height: 160%;
   padding: 20px 0 20px 25px;
@@ -140,11 +141,11 @@ body {
   margin-top: 20px;
 }
 
-.popup__tel::placeholder {
+.popup input[type=tel].popup__tel::placeholder {
   color: #B2B2B2;
 }
 
-.popup__button {
+.popup input[type=submit].popup__button {
   font-weight: bold;
   font-size: 14px;
   line-height: 112.84%;
@@ -2276,7 +2277,7 @@ body {
     width: 88vw;
   }
 
-  .popup__button {
+  .popup input[type=submit].popup__button {
     width: 100%;
     text-align: center;
     padding: 25px 0;

@@ -98,11 +98,11 @@ $main-color: #F16147;
 	}
 	&__form{
 		max-width: 100%;
-		& input{
+		& input[type="text"], & input[type="submit"]{
 			display: block;
 		}
 	}
-	&__name{
+	input[type="text"].popup__name{
 		font-size: 16px;
 		line-height: 160%;
 		padding: 20px 0 20px 25px;
@@ -116,7 +116,7 @@ $main-color: #F16147;
 			color: #B2B2B2;
 		}
 	}
-	&__tel{
+	input[type="tel"].popup__tel{
 		font-size: 16px;
 		line-height: 160%;
 		padding: 20px 0 20px 25px;
@@ -130,7 +130,7 @@ $main-color: #F16147;
 			color: #B2B2B2;
 		}
 	}
-	&__button{
+	input[type="submit"].popup__button{
 		font-weight: bold;
 		font-size: 14px;
 		line-height: 112.84%;
@@ -160,7 +160,7 @@ $main-color: #F16147;
 	}
 	@media screen and (max-width: 750px) {
 		width: 88vw;
-		&__button{
+		input[type="submit"].popup__button{
 			width: 100%;
 			text-align: center;
 			padding: 25px 0;

@@ -162,8 +162,16 @@ $main-color: #F16147;
 		width: 457px;
 		max-width: 100%;
 		margin-top: 20px;
+		transition: .4s;
 		&::placeholder{
 			color: #B2B2B2;
+			transition: .4s;
+		}
+		&.active{
+			border: 1px solid #C02100;
+			&::placeholder{
+				color: #C02100;
+			}
 		}
 	}
 	input[type="submit"].popup__button{
@@ -262,6 +270,58 @@ $main-color: #F16147;
 		& .call-order__thank{
 			display: block;
 		}
+	}
+}
+.file-download{
+	padding: 20px 82.5px 20px 124px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	& .file__button_2{
+		display: block;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 112.84%;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #070715;
+		padding: 25px 0;
+		margin-top: 15px;
+		background: transparent;
+		border: 1px solid #000;
+		box-sizing: border-box;
+		border-radius: 4px;
+		max-width: 100%;
+		width: 457px;
+		text-align: center;
+	}
+	&__title{
+		max-width: 500px;
+	}
+	&.active{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+		& .call-order__title, & .call-order__form{
+			display: none;
+		}
+		& .call-order__thank{
+			display: block;
+		}
+	}
+	@media screen and (max-width: 1100px) {
+		padding: 20px 50px;
+	}
+	@media screen and (max-width: 500px) {
+		padding: 20px 20px;
+	}
+	@media screen and (max-width: 470px){
+		min-height: 500px;
 	}
 }
 /* header */

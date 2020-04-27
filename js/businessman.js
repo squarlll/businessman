@@ -1,6 +1,42 @@
 $(document).ready(function(){
-	// lazy loading
-
+	// pop-up
+	$('.call-order-btn, .main__button_2, .main__button, .statistics__button button, .footer__tel-button').on('click', function(){
+		$('.popup-background, .call-order-wrapper').addClass('active');
+		$('.nav').removeClass('menu-active');
+		$('.header__menu-btn').removeClass('hamburger-active');
+		$('html').addClass('lock');
+	});
+	$('.call-order__button').on('click', function(){
+		if ($('.popup__tel').is(":not(:invalid)")) {
+			$('.popup-thank').addClass('active');
+			$('.popup').addClass('active');
+			var yourName = $('.popup__name').val();
+			$('.popup-thank__image img').addClass('img_visible')
+			$('.popup-thank__title .popup-thank__your-name').html(yourName)
+		}
+	});
+	$('.file__button button').on('click', function(){
+		$('.popup-background, .file-download-wrapper').addClass('active');
+		$('.header__menu-btn').removeClass('hamburger-active');
+		$('html').addClass('lock');
+	});
+	$('.file__button_2').on('click', function(){
+		if ($('.file-download__tel').is(":invalid")) {
+			$('.file-download__tel').toggleClass('active')
+		} else {
+			$(this).attr('href', 'book.pdf');
+			$('.popup-background, .call-order-wrapper, .file-download-wrapper').removeClass('active');
+			$('html').removeClass('lock');
+			$('.popup-thank').removeClass('active');
+			$('.popup').removeClass('active');
+		}
+	});
+	$('.popup__close-button, .popup-background').on('click', function(){
+		$('.popup-background, .call-order-wrapper, .file-download-wrapper').removeClass('active');
+		$('html').removeClass('lock');
+		$('.popup-thank').removeClass('active');
+		$('.popup').removeClass('active');
+	});
 	// menu
 	$('.header__menu-btn').on('click', function(){
 		$('.header__menu ul').toggleClass('menu-active');
@@ -108,44 +144,6 @@ $(document).ready(function(){
 		$('.questions__boxes .questions__box:nth-child(5)').toggleClass('active');
 		$('.answer_4').slideToggle(450);
 		$('.question__button_4').toggleClass('active');
-	});
-	// pop-up
-	$('.call-order-btn, .main__button_2, .main__button, .statistics__button button').on('click', function(){
-		$('.popup-background, .call-order-wrapper').addClass('active');
-		$('.nav').removeClass('menu-active');
-		$('.header__menu-btn').removeClass('hamburger-active');
-		$('html').addClass('lock');
-	});
-	$('.call-order__button').on('click', function(){
-		if ($('.popup__tel').is(":not(:invalid)")) {
-			$('.popup-thank').addClass('active');
-			$('.popup').addClass('active');
-			var yourName = $('.popup__name').val();
-			$('.popup-thank__image img').addClass('img_visible')
-			$('.popup-thank__title .popup-thank__your-name').html(yourName)
-		}
-	});
-	$('.file__button button').on('click', function(){
-		$('.popup-background, .file-download-wrapper').addClass('active');
-		$('.header__menu-btn').removeClass('hamburger-active');
-		$('html').addClass('lock');
-	});
-	$('.file__button_2').on('click', function(){
-		if ($('.file-download__tel').is(":invalid")) {
-			$('.file-download__tel').toggleClass('active')
-		} else {
-			$(this).attr('href', 'book.pdf');
-			$('.popup-background, .call-order-wrapper, .file-download-wrapper').removeClass('active');
-			$('html').removeClass('lock');
-			$('.popup-thank').removeClass('active');
-			$('.popup').removeClass('active');
-		}
-	});
-	$('.popup__close-button, .popup-background').on('click', function(){
-		$('.popup-background, .call-order-wrapper, .file-download-wrapper').removeClass('active');
-		$('html').removeClass('lock');
-		$('.popup-thank').removeClass('active');
-		$('.popup').removeClass('active');
 	});
 });
 $(document).on("scroll", function(){

@@ -1,17 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>businessman</title>
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-    <!-- fonts --> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/ion.rangeSlider.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-404">
     <!-- popup -->
@@ -25,14 +20,43 @@
                 <div class="popup-thank__image">
                     <img src="img/benjamin-franklin.png" alt="">
                 </div>
-                <div class="popup-thank__title">Уважаемый, Ленар!<br>Спасибо за обращение.</div>
+                <div class="popup-thank__title">Уважаемый <span class="popup-thank__your-name"></span>!<br>Спасибо за обращение.</div>
                 <div class="popup-thank__subtitle">Сейчас вы сделали 1 шаг навстречу к нам, завтра мы сделаем 1000 навстречу к нам.<br>А пока следите за нами в социальных сетях</div>
+                <div class="popup__social">
+                    <a href="https://vk.com/yabusinessman">
+                        <img src="img/ico/header/header-vk.svg" alt="">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCyBd1Y4m71nm0bTI_HFWw-w?view_as=subscriber">
+                        <img src="img/ico/header/header-youtube.svg" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/Yabusinessman/">
+                        <img src="img/ico/header/header-facebook.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/yabusinessman">
+                        <img src="img/ico/header/header-twitter.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/yabusinessman/">
+                        <img src="img/ico/header/header-instagram.svg" alt="">
+                    </a>
+                </div>
             </div>
             <div class="popup__title call-order__title">Заполните заявку и мы перезвоним вам!</div>
             <form class="popup__form call-order__form" onsubmit="return false;">
                 <input class="popup__name" type="text" placeholder="Ваше имя" required>
                 <input class="popup__tel" type="tel" placeholder="+ 7 921 131-00-00" required>
                 <input class="popup__button call-order__button" type="submit" value="Заказать звонок">
+            </form>
+        </div>
+    </div>
+    <div class="popup-wrapper file-download-wrapper">
+        <div class="file-download popup">
+            <button class="popup__close-button">
+                <img src="img/ico/close-popup.svg" alt="">
+            </button>
+            <div class="popup__title file-download__title">Оставьте свой номер телефона  — и получите книгу</div>
+            <form class="popup__form file-download__form" onsubmit="return false;">
+                <input class="popup__tel file-download__tel" type="tel" placeholder="+ 7 921 131-00-00" required="required">
+                <a class="file__button_2" target="_blank">Скачать книгу</a>
             </form>
         </div>
     </div>
@@ -45,7 +69,7 @@
             </div>
             <div class="logo">
                 <a href="index.html">
-                    <img src="img/logo-1.png" alt="">
+                    <img src="img/logo-1.png" alt="" width="199">
                 </a>
             </div>
             <ul class="nav">
@@ -62,22 +86,19 @@
                 </div>
                 <li class="header__social">
                     <a href="https://vk.com/yabusinessman">
-                        <img src="img/ico/header/vk.svg" alt="">
+                        <img src="img/ico/header/header-vk.svg" alt="">
                     </a>
                     <a href="https://www.youtube.com/channel/UCyBd1Y4m71nm0bTI_HFWw-w?view_as=subscriber">
-                        <img src="img/ico/header/youtube.svg" alt="">
+                        <img src="img/ico/header/header-youtube.svg" alt="">
                     </a>
                     <a href="https://www.facebook.com/Yabusinessman/">
-                        <img src="img/ico/header/facebook.svg" alt="">
+                        <img src="img/ico/header/header-facebook.svg" alt="">
                     </a>
                     <a href="https://twitter.com/yabusinessman">
-                        <img src="img/ico/header/twitter.svg" alt="">
+                        <img src="img/ico/header/header-twitter.svg" alt="">
                     </a>
                     <a href="https://www.instagram.com/yabusinessman/">
-                        <img src="img/ico/header/instagram.svg" alt="">
-                    </a>
-                    <a href="https://t.me/yabusinessmanrf">
-                        <img src="img/ico/header/telegram.svg" alt="">
+                        <img src="img/ico/header/header-instagram.svg" alt="">
                     </a>
                 </li>
                 <li class="header__tel">
@@ -89,24 +110,24 @@
     <div class="header__bottom">
         <div class="container">
             <div class="header__social">
-                    <a href="https://vk.com/yabusinessman">
-                        <img src="img/ico/footer/vk.svg" alt="">
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCyBd1Y4m71nm0bTI_HFWw-w?view_as=subscriber">
-                        <img src="img/ico/footer/youtube.svg" alt="">
-                    </a>
-                    <a href="https://www.facebook.com/Yabusinessman/">
-                        <img src="img/ico/footer/facebook.svg" alt="">
-                    </a>
-                    <a href="https://twitter.com/yabusinessman">
-                        <img src="img/ico/footer/twitter.svg" alt="">
-                    </a>
-                    <a href="https://www.instagram.com/yabusinessman/">
-                        <img src="img/ico/footer/instagram.svg" alt="">
-                    </a>
-                    <a href="https://t.me/yabusinessmanrf">
-                        <img src="img/ico/footer/telegram.svg" alt="">
-                    </a>
+                <a href="https://vk.com/yabusinessman">
+                    <img src="img/ico/footer/vk.svg" alt="">
+                </a>
+                <a href="https://www.youtube.com/channel/UCyBd1Y4m71nm0bTI_HFWw-w?view_as=subscriber">
+                    <img src="img/ico/footer/youtube.svg" alt="">
+                </a>
+                <a href="https://www.facebook.com/Yabusinessman/">
+                    <img src="img/ico/footer/facebook.svg" alt="">
+                </a>
+                <a href="https://twitter.com/yabusinessman">
+                    <img src="img/ico/footer/twitter.svg" alt="">
+                </a>
+                <a href="https://www.instagram.com/yabusinessman/">
+                    <img src="img/ico/footer/instagram.svg" alt="">
+                </a>
+                <a href="https://tele.click//yabusinessmanrf">
+                    <img src="img/ico/footer/telegram.svg" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -118,10 +139,11 @@
         <div class="page--warning__title">Страница не найдена</div>
         <div class="page--warning__subtitle">То, что вы ищете, не найдено или пока не открыто</div>
         <div class="page--warning__button">
-            <a href="#">Вернуться на главную</a>
+            <a href="index.html">Вернуться на главную</a>
         </div>
     </div>
     <!-- scripts -->
     <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
-    <script src="js/businessman.js" type="text/javascript"></script>
+    <script src="js/businessman.min.js" type="text/javascript"></script>
 </body>
+</html>
